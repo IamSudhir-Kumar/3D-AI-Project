@@ -2,6 +2,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
 import { useSnapshot } from 'valtio';
 import CustomButton from '../components/CustomButton';
+
+
 import { iOSFix } from '../config/helpers';
 import {
 	headContainerAnimation,
@@ -61,6 +63,13 @@ const Home = () => {
 								handleClick={() => (state.intro = false)}
 								customStyles='w-fit px-4 font-bold lg:text-[2vmin] text-[100%]'
 							/>
+							
+							{/* <SignupButton
+							 type='filled'
+							 title='Sign Up'
+							 handleClick={() => (state.intro = false)}
+							 customStyles='w-fit px-4 font-bold lg:text-[2vmin] text-[100%]'
+						 /> */}
 						</motion.div>
 					</motion.div>
 				</motion.section>
