@@ -28,7 +28,7 @@ const Home = () => {
 			{snap.intro && (
 				<motion.section className='home' {...slideAnimation('left')}>
 					<motion.header {...slideAnimation('down')}>
-						<a
+						{/* <a
 							href='https://www.linkedin.com/in/exslym/'
 							target='_blank'
 							className='flex items-center gap-[2vmin]'
@@ -41,7 +41,9 @@ const Home = () => {
 							<h2 className='font-bold lg:text-[1.8rem] md:text-[1.4rem] text-md text-gray-500'>
 								exslym
 							</h2>
-						</a>
+						</a> */}
+
+						
 					</motion.header>
 
 					<motion.div className='home-content' {...headContainerAnimation}>
@@ -63,13 +65,7 @@ const Home = () => {
 								handleClick={() => (state.intro = false)}
 								customStyles='w-fit px-4 font-bold lg:text-[2vmin] text-[100%]'
 							/>
-							
-							{/* <SignupButton
-							 type='filled'
-							 title='Sign Up'
-							 handleClick={() => (state.intro = false)}
-							 customStyles='w-fit px-4 font-bold lg:text-[2vmin] text-[100%]'
-						 /> */}
+
 						</motion.div>
 					</motion.div>
 				</motion.section>
